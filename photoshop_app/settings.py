@@ -22,7 +22,7 @@ SECRET_KEY = '7s-41yx4boz&(8prbwbp+s@n42rk1c$j^^-0+pj-@38rx9_#-i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'opencvphotoshop.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','opencvphotoshop.herokuapp.com']
 
 
 # Application definition
