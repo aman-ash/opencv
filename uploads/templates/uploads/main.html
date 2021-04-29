@@ -1,10 +1,55 @@
 {% extends "base.html" %} {% load crispy_forms_tags %} {% block content %}
+<h1>PhotoShop by AMAN</h1>
 <div class="mt-3">
-  <div id="alert-box"></div>
-  <div id="img-box"></div>
+  <div id="alert-box" class="text-center"></div>
+  <div id="img-box" class="text-center"></div>
   <form id="p-form" autocomplete="off">
     {% csrf_token %} {{form|crispy}}
-    <button type="submit" class="btn btn-primary">Send</button>
+
+    <div id="btn-box" class="not-visible mt-1 mb-3">
+      <button
+        type="submit"
+        class="btn btn-primary text-light bg-dark"
+        data-filter="NO_FILTER"
+      >
+        NO FILTER
+      </button>
+      <button
+        type="submit"
+        class="btn btn-primary text-light bg-dark"
+        data-filter="COLORIZED"
+      >
+        COLORIZED
+      </button>
+      <button
+        type="submit"
+        class="btn btn-primary text-light bg-dark"
+        data-filter="GRAYSCALE"
+      >
+        GRAYSCALE
+      </button>
+      <button
+        type="submit"
+        class="btn btn-primary text-light bg-dark"
+        data-filter="BLURRED"
+      >
+        BLURRED
+      </button>
+      <button
+        type="submit"
+        class="btn btn-primary text-light bg-dark"
+        data-filter="BINARY"
+      >
+        BINARY
+      </button>
+      <button
+        type="submit"
+        class="btn btn-primary text-light bg-dark"
+        data-filter="INVERT"
+      >
+        INVERT
+      </button>
+    </div>
   </form>
 </div>
 {% endblock content %}
